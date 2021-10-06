@@ -12,6 +12,10 @@ const names = ["Henk", "Piet", "Fred", "Joop"];
 // Na jouw script zie je de aangepaste waardes:
 // console.log(names) geeft: ["Henkje", "Pietje", "Fredje", "Joopje"]
 
+for (let index = 0; index < names.length; index += 1 ) {
+    if (names)
+        console.log(names[index] + "je")
+}
 
 // ==========================================
 // Opdracht 2
@@ -27,6 +31,9 @@ const numbers = [2, 4, 5, 29, 38];
 // Na jouw script zie je de aangepaste waardes:
 // console.log(numbers) geeft: [ 6, 12, 15, 87, 114 ];
 
+console.log(numbers);
+const sumTotal = numbers.map(x => x * 3);
+console.log(sumTotal);
 
 // ==========================================
 // Opdracht 3
@@ -42,3 +49,9 @@ const squares = [30, 2, 8, 24, 11];
 // console.log(numbers) geeft: [30, 2, 8, 24, 11];
 // Na jouw script zie je de aangepaste waardes:
 // console.log(numbers) geeft: [27000, 8, 512, 13824, 1331];
+
+console.log(squares);
+for (let i = 0; i < squares.length; i++) {
+    squares[i] = squares[i] * squares[i] * squares[i];
+}
+console.log(squares);
